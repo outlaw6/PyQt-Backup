@@ -1,0 +1,4 @@
+import subprocess
+var = "c*"
+#print subprocess.check_output(['ls','-l c\*'], shell=True)
+print subprocess.call(["ls -l "+ var + "], shell=True)
